@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/* body {
+    margin-bottom: 54px;
+} */
+nav {
+    display: inline-block;
+}
+.container {
+    width: 900px;
+    font-size: 0px;
+    margin: 0 auto;
+}
+.site-navigation {
+    width: 900px;
+    display: inline-block;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+.site-navigation li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 110px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(98, 98, 98);
+    font-family: playfair display;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+.div {
+    display: inline-block;
+    margin: 0 auto;  
+}
+a {
+    text-decoration: none;
+}
+.site-navigation li:last-child {
+    margin-right: 0px;
+}
+article {
+    width: 420px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 60px;
+}
+article:nth-child(2n) {
+    margin-right: 0px;
+}
+.img1 {
+    display: inline-block;  
+    width: 420px;
+    height: 280px;
+    margin-bottom: 30px;
+}
+.text {
+    display: inline-block;
+    line-height: auto;
+    font-size: 14px;
+    font-family: ubuntu;
+    font-weight: light;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    margin-bottom: 22px;
+}
+.subtext {
+    display: inline-block;
+    margin: 0px;
+    line-height: auto;
+    font-size: 30px;
+    font-family: Playfair Display;
+    font-weight: lighter;
+    text-transform: none;
+    color: #626262;
+    margin-bottom: 32px;
+}
+p {
+    display: inline-block;
+    font-size: 14px;
+    font-family: Playfair Display;
+    font-weight: 500;
+    color: rgb(62,62,62);
+    line-height: 24px;
+    margin-bottom: 130px;
+}
+/* p:nth-last-child(-n +2) {
+    margin-bottom: 0;
+}
+article:nth-last-child(-n +2) {
+    margin-bottom: 0;
+} */
+.art {
+    margin-bottom: 50px;
+}
+button {
+    display: inline-block;
+    padding: 0px;
+    border: 1px, black;
+    width: 164px;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(62,62,62);
+    font-family: Playfair Display;
+    font-weight: 500;
+    /* margin: 0; */
+    text-align: center;
+    margin-right: 380px;
+    margin-left: 360px;
+    margin-bottom: 54px;
+}
