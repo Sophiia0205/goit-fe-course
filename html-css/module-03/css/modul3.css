@@ -4,26 +4,32 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-/* body {
+header {
+    display: inline-block;
+    width: 900px;
+    margin: 0;
     margin-bottom: 54px;
-} */
+}
 nav {
     display: inline-block;
-}
-.container {
     width: 900px;
-    font-size: 0px;
-    margin: 0 auto;
+    font-size: 0;
 }
 .site-navigation {
-    width: 900px;
     display: inline-block;
-    margin: 0;
+    width: 900px;
+    margin: 0 auto;
     padding: 0px;
     text-align: center;
-    margin-bottom: 54px;
+}
+ul {
+    display: inline-block;
+    padding: 0;
 }
 .site-navigation li {
+    display: inline-block;
+}
+a {
     display: inline-block;
     margin: 0px;
     padding: 0px;
@@ -33,12 +39,10 @@ nav {
     color: rgb(98, 98, 98);
     font-family: playfair display;
     padding-bottom: 50px;
-    padding-top: 50px;
-
+    padding-top: 50px;    
 }
-.div {
-    display: inline-block;
-    margin: 0 auto;  
+.site-navigation a:hover {
+    color: pink;
 }
 a {
     text-decoration: none;
@@ -46,10 +50,26 @@ a {
 .site-navigation li:last-child {
     margin-right: 0px;
 }
+.site-navigation li:first-child {
+    margin-left: 165px;
+}
+section {
+    width: 900px;
+    font-size: 0px;
+    margin: 0 auto;;
+}
+.container {
+    display: inline-block;
+    width: 900px;
+    font-size: 0px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
 article {
     width: 420px;
     display: inline-block;
     margin: 0px;
+    margin-bottom: 130px;
     padding: 0px;
     margin-right: 60px;
 }
@@ -90,16 +110,10 @@ p {
     font-weight: 500;
     color: rgb(62,62,62);
     line-height: 24px;
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
 }
-/* p:nth-last-child(-n +2) {
+p:nth-child(n+5) {
     margin-bottom: 0;
-}
-article:nth-last-child(-n +2) {
-    margin-bottom: 0;
-} */
-.art {
-    margin-bottom: 50px;
 }
 button {
     display: inline-block;
@@ -115,5 +129,5 @@ button {
     text-align: center;
     margin-right: 380px;
     margin-left: 360px;
-    margin-bottom: 54px;
+    /* margin-bottom: 54px; */
 }
