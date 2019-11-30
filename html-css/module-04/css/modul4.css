@@ -15,16 +15,15 @@ clear: both;
 }
 .logo {
     display: inline-block;
-    width: 80px;
-    font-family: Roboto Light;
+    font-family: Roboto;
     font-size: 30px;
     text-transform: uppercase;
     color: #767577;
     margin: 0;
-    padding: 0;
 }
 .logo::first-letter {
     font-size: 30px;
+    font-weight: bold;
     color: #1abc9c;
 }
 .site-navigation {
@@ -37,8 +36,8 @@ clear: both;
 .site-navigation a:hover {
     color: #1abc9c;
 }
-a {
-    font-family: Open Sans; 
+.nav {
+    font-family: "Open Sans"; 
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -55,7 +54,7 @@ a {
     margin: 0 auto;
     width: 1110px;
 }
-h2 {
+.featured-items {
     text-transform: uppercase;
     text-align: center;
     color: #515151;
@@ -83,9 +82,9 @@ h2::after {
 .article:nth-last-of-type(-n+4) {
     margin-bottom: 100px;
 }
-.article a:hover {
+/* .article a:hover {
     color: #1abc9c;
-}
+} */
 .item-look {
     margin: 0;
     padding: 0;
@@ -100,18 +99,37 @@ h2::after {
     background-color: #323232;
 }
 .product-name {
+    font-size: 18px;
+    font-family: "Roboto Black";
+    color: white;
+    text-transform: uppercase;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 201px;
     height: 40px;
     background-color: #323232;
 }
 .product-price {
+    font-size: 18px;
+    font-family: "Roboto Black";
+    color: white;
+    text-transform: uppercase;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 54px;
     height: 40px;
     background-color: #8c8c8c;
+}
+.article img a:hover {
+    color: #1abc9c;
+}
+.lastest-news {
+    text-transform: uppercase;
+    text-align: center;
+    color: #515151;
+    font-family: Roboto Black;
+    font-weight: bold;
+    font-size: 48px;
 }
 .article1 {
     width: 350px;
@@ -122,7 +140,7 @@ h2::after {
     margin-right: 30px;
 } 
 h3 {
-    font-family: Myriad Pro regular;
+    font-family: "Myriad Pro";
     font-weight: 500;
     font-size: 18px;
     color: #555252;
@@ -137,15 +155,28 @@ h3::after {
         margin: 16px 0px 30px;
     }
 .text {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-weight: normal;
     font-size: 14px;
     color: #555252;
     line-height: 26px;
 }
 .read {
-    display: inline-block;
+    display: block;
     width: 160px;
     height: 50px;
+    margin: 0;
+    margin-bottom: 46px;
+    padding: 0;
     background-color: #1abc9c;
+    border: 1px;
+    border-radius: 4px;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
 }
