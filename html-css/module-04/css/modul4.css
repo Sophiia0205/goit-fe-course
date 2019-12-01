@@ -10,14 +10,16 @@ content: "";
 clear: both;
 }
 .page-header {
-    margin: 36px auto 108px;
-    width: 1110px;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 108px;
 }
 .logo {
     display: inline-block;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+    text-decoration: none;
     color: #767577;
     margin: 0;
 }
@@ -28,7 +30,7 @@ clear: both;
 }
 .site-navigation {
     list-style: none;
-    width: 475px;
+    min-width: 475px;
     margin: 0;
     padding: 0;
     float: right;
@@ -36,8 +38,9 @@ clear: both;
 .site-navigation a:hover {
     color: #1abc9c;
 }
-.nav {
-    font-family: "Open Sans"; 
+.link-nav {
+    display: block;
+    font-family: "Open Sans", sans-serif; 
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -54,11 +57,15 @@ clear: both;
     margin: 0 auto;
     width: 1110px;
 }
+.container1 {
+    margin-bottom: 100px;
+}
 .featured-items {
+    margin: 0;
     text-transform: uppercase;
     text-align: center;
     color: #515151;
-    font-family: Roboto Black;
+    font-family: Roboto Black, sans-serif;
     font-weight: bold;
     font-size: 48px;
 } 
@@ -80,11 +87,8 @@ h2::after {
     margin-right: 30px;
 }
 .article:nth-last-of-type(-n+4) {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
-/* .article a:hover {
-    color: #1abc9c;
-} */
 .item-look {
     margin: 0;
     padding: 0;
@@ -96,38 +100,39 @@ h2::after {
     float: left;
 }
 .item1 {
-    background-color: #323232;
+    background-color: rgba(50, 50, 50, 0.6); 
 }
 .product-name {
     font-size: 18px;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     color: white;
     text-transform: uppercase;
     margin: 0;
     padding: 10px;
     width: 201px;
     height: 40px;
-    background-color: #323232;
+    /* background-color: #323232; */
 }
 .product-price {
     font-size: 18px;
-    font-family: "Roboto Black";
+    font-family: "Roboto Black", sans-serif;
     color: white;
     text-transform: uppercase;
     margin: 0;
     padding: 10px;
     width: 54px;
     height: 40px;
-    background-color: #8c8c8c;
+    background-color: rgba(255, 255, 255, 0.3);
 }
-.article img a:hover {
-    color: #1abc9c;
+.article:hover {
+    background-color: rgb(26, 188, 156);
 }
 .lastest-news {
+    margin: 0;
     text-transform: uppercase;
     text-align: center;
     color: #515151;
-    font-family: Roboto Black;
+    font-family: Roboto Black, sans-serif;
     font-weight: bold;
     font-size: 48px;
 }
@@ -139,14 +144,15 @@ h2::after {
 .article1:not(:last-child) {
     margin-right: 30px;
 } 
-h3 {
-    font-family: "Myriad Pro";
+.h3 {
+    margin: 0;
+    font-family: "Myriad Pro", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #555252;
     line-height: 26px;
 }
-h3::after {
+.h3::after {
         content: "";
         display: block;
         width: 136px;
@@ -154,8 +160,16 @@ h3::after {
         background-color:#1abc9c;
         margin: 16px 0px 30px;
     }
+.news-look {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+    }
 .text {
-    font-family: "Open Sans";
+    margin: 0;
+    margin-bottom: 18px;
+    font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-size: 14px;
     color: #555252;
@@ -166,7 +180,6 @@ h3::after {
     width: 160px;
     height: 50px;
     margin: 0;
-    margin-bottom: 46px;
     padding: 0;
     background-color: #1abc9c;
     border: 1px;
@@ -180,3 +193,7 @@ h3::after {
     line-height: 50px;
     text-align: center;
 }
+/* .container2 {
+    margin-bottom: 46px;
+} */
+
