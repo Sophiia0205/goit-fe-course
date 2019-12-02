@@ -16,7 +16,7 @@ clear: both;
 }
 .logo {
     display: inline-block;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     text-decoration: none;
@@ -57,11 +57,12 @@ clear: both;
     margin: 0 auto;
     width: 1110px;
 }
-.container1 {
-    margin-bottom: 100px;
+.section {
+    padding-bottom: 100px;
 }
 .featured-items {
     margin: 0;
+    padding-bottom: 92px;
     text-transform: uppercase;
     text-align: center;
     color: #515151;
@@ -75,7 +76,7 @@ h2::after {
     width: 164px;
     height: 7px;
     background-color:#1abc9c;
-    margin: 30px auto 92px;
+    margin: 30px auto;
 }
 .article {
     width: 255px;
@@ -100,22 +101,21 @@ h2::after {
     float: left;
 }
 .item1 {
-    background-color: rgba(50, 50, 50, 0.6); 
+    background-color: #323232;
 }
 .product-name {
     font-size: 18px;
-    font-family: "Roboto Black", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     text-transform: uppercase;
     margin: 0;
     padding: 10px;
     width: 201px;
     height: 40px;
-    /* background-color: #323232; */
 }
 .product-price {
     font-size: 18px;
-    font-family: "Roboto Black", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     text-transform: uppercase;
     margin: 0;
@@ -124,11 +124,12 @@ h2::after {
     height: 40px;
     background-color: rgba(255, 255, 255, 0.3);
 }
-.article:hover {
+.article:hover .item1 {
     background-color: rgb(26, 188, 156);
 }
 .lastest-news {
     margin: 0;
+    padding-bottom: 92px;
     text-transform: uppercase;
     text-align: center;
     color: #515151;
@@ -139,6 +140,7 @@ h2::after {
 .article1 {
     width: 350px;
     height: 495px;
+    margin-bottom: 46px;
     float: left;
 }
 .article1:not(:last-child) {
@@ -146,6 +148,7 @@ h2::after {
 } 
 .h3 {
     margin: 0;
+    padding-bottom: 30px;
     font-family: "Myriad Pro", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -158,7 +161,7 @@ h2::after {
         width: 136px;
         height: 4px;
         background-color:#1abc9c;
-        margin: 16px 0px 30px;
+        margin: 16px 0px;
     }
 .news-look {
     display: block;
@@ -188,12 +191,9 @@ h2::after {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     line-height: 50px;
     text-align: center;
 }
-/* .container2 {
-    margin-bottom: 46px;
-} */
 
