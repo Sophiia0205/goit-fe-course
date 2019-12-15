@@ -18,9 +18,6 @@ html {
     margin: 0 auto;
     width: 1110px;
 }
-main {
-     background-color: rgb(233, 240, 253); 
-}
 .logo {
     display: inline-block;
     font-family: "Roboto", sans-serif;
@@ -67,6 +64,7 @@ main {
 .section {
     padding-bottom: 95px;
     position: relative;
+    background-color: rgb(233, 240, 253);
 }
 .slider {
     position: relative;
@@ -96,9 +94,15 @@ main {
 }
 .prev {
     left: 0;
+    background-image: url('../img/left.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .next {
     right: 0;
+    background-image: url('../img/right.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .img1 {
     position: absolute;
@@ -106,6 +110,8 @@ main {
 .name {
     position: absolute;
     display: block;
+    margin: 0;
+    padding: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -150%);
@@ -141,7 +147,7 @@ main {
 }
 .new-collection {
     margin: 0;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
     text-transform: uppercase;
     text-align: center;
     color: #515151;
@@ -155,7 +161,7 @@ main {
     width: 160px;
     height: 7px;
     background-color:#1abc9c;
-    margin: 30px auto;
+    margin: 30px auto 0;
 }
 .list {
     margin: 0;
@@ -216,7 +222,7 @@ main {
     background-color: rgba(26, 188, 156, 1);
 }
 .list-item:hover .overlay {
-    opacity: 0.7;
+    opacity: 1;
 }
 .icons:hover {
     background-color: #1abc9c;
@@ -229,6 +235,9 @@ main {
     padding: 0;
     list-style: none;
 }
+.add {
+    list-style: none;
+}
 .icons {
     display: block;
     width: 50px;
@@ -238,8 +247,9 @@ main {
     float: left;
     padding: 12px;
     margin-bottom: 7px;
+    cursor: pointer;
 }
-.icons-list li:not(:last-child) {
+.icons-list button:not(:last-child) {
     margin-right: 9px;
 }
 .box {
@@ -252,6 +262,7 @@ main {
     background-color: #323232;
     top: 137px;
     left: 34px;
+    cursor: pointer;
 }
 .text {
     float: right;
