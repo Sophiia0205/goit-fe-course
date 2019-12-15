@@ -5,14 +5,18 @@ html {
     box-sizing: inherit;
 }
 .clearfix::after {
-display: table;
-content: "";
-clear: both;
+    display: table;
+    content: "";
+    clear: both;
 }
 .page-header {
     margin: 0 auto;
     line-height: 90px;
     height: 90px;
+}
+.container {
+    margin: 0 auto;
+    width: 1110px;
 }
 main {
      background-color: rgb(233, 240, 253); 
@@ -42,6 +46,9 @@ main {
 .site-navigation a:hover {
     color: #1abc9c;
 }
+.logo:hover {
+    color: #1abc9c;  
+}
 .link-nav {
     display: block;
     font-family: "Open Sans", sans-serif; 
@@ -57,19 +64,51 @@ main {
 .site-navigation li:not(:last-child) {
     margin-right: 30px;
 } 
-.container {
-    margin: 0 auto;
-    width: 1110px;
-}
 .section {
     padding-bottom: 95px;
     position: relative;
 }
+.slider {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    height: 600px;
+}
+.but-ctrl {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(-100%);
+    top: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+    background-color: #1abc9c;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.prev:hover {
+    background-color: #1abc9c;
+    opacity: 1;
+}
+.next:hover {
+    background-color: #1abc9c;
+    opacity: 1;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.img1 {
+    position: absolute;
+}
 .name {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -150%);
 }
 .h2 { 
     margin: 0;
@@ -91,6 +130,7 @@ main {
     font-weight: 100;
 }
 .img {
+    margin: 0 auto;
     display: block;
     max-width: 100%;
     height: auto;
@@ -135,6 +175,8 @@ main {
 }
 .item1 {
     display: block;
+    position: absolute;
+    bottom: 0;
     margin: 0;
     padding: 0;
     background-color: #323232;
@@ -161,18 +203,23 @@ main {
     background-color: rgba(255, 255, 255, 0.3);
 }
 .overlay {
-        position: absolute;
-        border-width: 10px;
-        border-color: rgb(255, 255, 255);
-        border-style: solid;
-        background-color: rgb(0, 0, 0);
-        opacity: 0;
-        width: 255px;
-        height: 282px;
-        /* z-index: 25;      */
+    position: absolute;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    opacity: 0;
+    width: 255px;
+    height: 282px;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.549);
+}
+.link-item:hover .item1 {
+    background-color: rgba(26, 188, 156, 1);
 }
 .list-item:hover .overlay {
     opacity: 0.7;
+}
+.icons:hover {
+    background-color: #1abc9c;
 }
 .icons-list {
     position: absolute;
@@ -186,10 +233,10 @@ main {
     display: block;
     width: 50px;
     height: 50px;
-    border-color: white;
-    border: 1px;
-    background-color: #1abc9c;
+    border: 1px solid white;
+    background-color: transparent;
     float: left;
+    padding: 12px;
     margin-bottom: 7px;
 }
 .icons-list li:not(:last-child) {
@@ -198,13 +245,25 @@ main {
 .box {
     position: absolute;
     display: block;
+    padding: 12px;
     width: 168px;
     height: 50px;
-    border-color: white;
-    border: 1px;
-    background-color: pink;
+    border: 1px solid white;
+    background-color: #323232;
     top: 137px;
     left: 34px;
+}
+.text {
+    float: right;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+}
+.box:hover {
+    background-color:  rgb(26, 188, 156);
+    opacity: 1;
 }
 .footer {
     position: relative;
@@ -226,4 +285,4 @@ main {
   }
 
   
-  
+    
