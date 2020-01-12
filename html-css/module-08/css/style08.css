@@ -1,0 +1,236 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.page-header {
+    background: url(../img/Vector\ Smart\ Object-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 542px;
+    background-position: center;
+    padding: 18px 0;
+    margin-bottom: 70px;
+}
+.log {
+    display: flex;
+    justify-content: space-between;
+    width: 282px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 115px;
+    padding: 0 65px;
+}
+.log-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.log-item-link {
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+.urlaub {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.share {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 30px;
+}
+.button, .button-down {
+    display: block;
+    margin: 0 auto 60px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 280px;
+    height: 42px;
+    text-align: center;
+}
+.button {
+    color: #ffffff;
+    background-color:  #ff4e50;
+    border: none;
+}
+.button-down {
+    color: rgb(255, 78, 80);
+    background-color:  rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+    cursor: pointer;
+}
+
+.sign-up {
+    border: 2px solid rgb(255, 255, 255);
+    height: 36px;
+    width: 90px;
+    border-radius: 20px;
+    text-align: center;
+}
+.partner-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.partner-item {
+    display: block;
+    width: 236px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0 13px;
+    position: relative;
+}
+.partner-item::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
+    top: 85px;
+    left: 145px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tv::before {
+    background-color: #ff4e50;
+    background-image: url(../img/Shape\ 128.png);
+}
+.ch::before {
+    background-color: #ffa507;
+    background-image: url(../img/Shape\ 155.png);
+}
+.coffee::before {
+    background-color: #1cd7ad;
+    background-image: url(../img/Shape\ 153.png);
+}
+.fly::before {
+    background-color: #4e73db;
+    background-image: url(../img/Shape\ 170.png);
+}
+.meet {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.name {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+.description {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666666;
+    padding: 0;
+    text-align: center;
+}
+.pics {
+    display: block;
+    margin: 0 auto;
+}
+@media (min-width: 748px) {
+    .changes {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 660px;
+    }
+    .log {
+        justify-content: space-between;
+        padding: 0;
+        width: 160px;
+    }
+    .page-navigation {
+        order: 2;
+        margin: 0;
+        padding: 24px 0 0;
+    }
+    .urlaub {
+        margin: 0;
+        padding: 32px 0 0;
+    }
+    .partner-list {
+        /* width: 492px; */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 128px;
+    }
+    .tv {
+        order: 1;
+    }
+    .coffee {
+        order: 2;
+    }
+    .ch {
+        order: 3;
+    }
+    .fly {
+        order: 4;
+    }
+}
+@media (min-width: 749px) and (max-width: 1440px) {
+    .changes {
+        width: 942px;
+    }
+    .partner {
+        margin: 0 auto;
+        width: 942px;
+    }
+    .share {
+        width: 520px;
+        margin: 0 auto;
+        font-size: 52px;
+    }
+    .p {
+        font-size: 22px;
+    }
+    .partner-list {
+        /* width: 492px; */
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    .partner-item {
+        width: 220px;
+        padding: 0;
+    }
+    .partner-item:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+
+
+  
+  
