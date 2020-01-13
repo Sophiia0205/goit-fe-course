@@ -12,11 +12,14 @@ html {
     margin: 0 auto;
 }
 .site-navigation {
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: 490px;
+    min-width: 490px;
     justify-content: space-between;
     list-style: none;
 }
+
 .site-navigation a:hover {
     color: #f38181;
 }
@@ -42,19 +45,23 @@ html {
     font-size: 14px;
     text-transform: uppercase;
     transition: color linear 0.2s;
+    padding-top: 12px;
 }
 
-.link-nav:hover::after {
+.link-nav::after {
     content: "";
     display: block;
-    width: 50px;
     height: 3px;
     background-color:#f38181;
-    margin: 12px auto 0;
+    margin-top: 12px;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+.site-navigation a:hover::after {
+    transform: scaleX(1);
 }
 .page-header {
     margin: 0 auto;
-    height: 23px;
     margin-bottom: 130px;
 }
 .title {
@@ -65,7 +72,8 @@ html {
     font-size: 24px;
     line-height: 50px;
 }
-.title div {
+.title span {
+    display: block;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 30px;
@@ -76,7 +84,7 @@ html {
     width: 60px;
     height: 3px;
     background-color:#f38181;
-    margin: 40px auto 40px;
+    margin: 40px auto 0;
 }
 .services-items {
     display: flex;
@@ -87,12 +95,15 @@ html {
     list-style: none;
 }
 .soustitre {
+    margin: 0;
     text-transform: uppercase;
     color: #333333;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
 }
 .description {
+    margin: 0;
+    padding: 15px 0;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 15px;
@@ -141,7 +152,7 @@ html {
     width: 980px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     color: #999999;
@@ -161,9 +172,6 @@ html {
 }
 .list-item {
     position: relative;
-}
-.list-item:hover img {
-    box-shadow: 0 10px 10px #95e1d3;
 }
 .overlay {
     position: absolute;
@@ -220,6 +228,8 @@ html {
     background-image: url(../img/instagram.png);
 }
 .name {
+    margin: 0;
+    padding: 14px 0;
     text-transform: uppercase;
     text-align: center;
     color: #333333;
@@ -228,6 +238,7 @@ html {
     font-weight: 600;
 }
 .occupation {
+    margin: 0;
     color: #999999;
     font-size: 15px;
     text-align: center;
@@ -240,17 +251,11 @@ html {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 85px;
 }
 .span {
     color: #f38181;
-}
-.wrapper-low::after {
-    content: "";
-    display: block;
-    width: 1200px;
-    height: 1px;
-    background-color:rgb(229, 229, 229);
-    margin: 85px auto 0;
 }
 input::placeholder {
     font-family: "Roboto";
