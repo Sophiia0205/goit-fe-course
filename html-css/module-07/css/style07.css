@@ -91,6 +91,7 @@ body {
 }
 .contact-us {
     padding-top: 75px;
+    padding-bottom: 100px;
     background: url(../img/Map\ Image.jpg);
 }
 .services-title {
@@ -241,9 +242,7 @@ textarea {
     outline-style: double;
     outline-color: red;
 }
-.list-left,
-.list-right,
-.submit-button {
+.list-left {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -263,8 +262,11 @@ textarea {
     width: 240px;
     height: 64px;
     margin: 0 auto;
-    padding: 22px;
     background-color: rgb(254, 209, 54);
     border-radius: 3px;
     border: none;
+}
+.button:hover {
+    background-color: rgb(192, 164, 61);
+    opacity: 0.8;
 }
