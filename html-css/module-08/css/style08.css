@@ -4,6 +4,10 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+.container {
+    width: 280px;
+    margin: 0 auto;
+}
 .page-header {
     background: url(../img/Vector\ Smart\ Object-desktop.png);
     background-repeat: no-repeat;
@@ -35,6 +39,13 @@ html {
     color: #ffffff;
     text-decoration: none;
 }
+.urlaub-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+.urlaub-link:hover {
+    color: #ff4e50;
+}
 .urlaub {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -42,10 +53,12 @@ html {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
     margin-bottom: 34px;
 }
 .share {
-    font-size: 30px;
+    margin: 0;
+    font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #ffffff;
@@ -59,7 +72,9 @@ html {
     font-weight: 300;
     color: #ffffff;
     text-align: center;
+    margin: 0 0 18px;
     padding: 0 30px;
+    
 }
 .button, .button-down {
     display: block;
@@ -138,9 +153,11 @@ html {
     font-weight: bold;
     color: #333333;
     text-align: center;
+    margin: 0;
     margin-bottom: 20px;
 }
 .name {
+    margin: 0;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -148,23 +165,26 @@ html {
     text-align: center;
 }
 .description {
+    margin: 0;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #666666;
-    padding: 0;
+    padding: 14px 0 0;
     text-align: center;
 }
 .pics {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 14px;
 }
 @media (min-width: 748px) {
+    .container {
+        margin: 0 auto;
+        width: 660px;
+    }
     .changes {
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
-        width: 660px;
     }
     .log {
         justify-content: space-between;
@@ -176,15 +196,19 @@ html {
         margin: 0;
         padding: 24px 0 0;
     }
+    .share {
+        font-size: 48px;
+        margin: 0 auto 20px;
+        width: 492px;
+    }
     .urlaub {
         margin: 0;
         padding: 32px 0 0;
     }
     .partner-list {
-        /* width: 492px; */
+        width: 492px;
         display: flex;
         flex-wrap: wrap;
-        padding: 0 128px;
     }
     .tv {
         order: 1;
@@ -199,27 +223,24 @@ html {
         order: 4;
     }
 }
-@media (min-width: 749px) and (max-width: 1440px) {
-    .changes {
-        width: 942px;
-    }
-    .partner {
+@media (min-width: 960px) {
+    .container {
         margin: 0 auto;
         width: 942px;
     }
     .share {
         width: 520px;
-        margin: 0 auto;
+        margin: 0 auto 20px;
         font-size: 52px;
     }
     .p {
         font-size: 22px;
     }
     .partner-list {
-        /* width: 492px; */
         display: flex;
         flex-wrap: nowrap;
         padding: 0;
+        width: 942px;
     }
     .partner-item {
         width: 220px;
