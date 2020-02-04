@@ -4,138 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles10.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles10.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,600,700|Roboto:300,300i,400,500,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header class="page-header">
+    <div class="musthead"> 
+        <header class="page-header">
             <nav class="page-nav container">
-                <a class="logo" href="#">MoGo</a>
-                    <ul class="site-navigation">
-                         <li class="site-item"><a href="#" class="link-nav">about</a></li>
-                         <li class="site-item"><a href="#" class="link-nav">service</a></li>
-                         <li class="site-item"><a href="#" class="link-nav">work</a></li>
-                         <li class="site-item"><a href="#" class="link-nav">blog</a></li>
-                         <li class="site-item"><a href="#" class="link-nav">contact</a></li>    
+                <a class="site-logo" href="#">MoGo</a>
+                    <ul class="list site-navigation">
+                         <li class="site-navigation__item"><a href="#" class="site-navigation__link">about</a></li>
+                         <li class="site-navigation__item"><a href="#" class="site-navigation__link">service</a></li>
+                         <li class="site-navigation__item"><a href="#" class="site-navigation__link">work</a></li>
+                         <li class="site-navigation__item"><a href="#" class="site-navigation__link">blog</a></li>
+                         <li class="site-navigation__item"><a href="#" class="site-navigation__link">contact</a></li>    
+                         <li class="site-navigation__item"><a class="site-navigation__link" href="#">
+                             <svg class="header__navigation--icon">
+                                 <use href="img/sprite-shop.svg#icon-cart"></use>
+                             </svg>    
+                         </a></li>
+                         <li class="site-navigation__item"><a class="site-navigation__link" href="#">
+                            <svg class="header__navigation--icon">
+                                <use href="img/sprite-shop.svg#icon-glass"></use>
+                            </svg>    
+                        </a></li>
                     </ul>
             </nav>
-    </header> 
+            <h1 class="header__title">
+                <span class="header__title--item">Creative Template</span>welcome to mogo
+            </h1>
+            <button class="button">learn more</button>
+        </header>
+    </div>
     <main>
         <section class="wrapper">
-            <h2 class="title">We work with <span>amazing services</span></h2>
-        <ul class="services-items">
-            <li class="items">
-            <div class="item-plus icon-alarm">
-                <h3 class="soustitre">photography</h3>
-                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, cumque?</p>
+            <h2 class="wrapper__title">We work with <span>amazing services</span></h2>
+        <ul class="list wrapper__list">
+            <li class="wrapper__item">
+            <div class="wrapper__icon wrapper__icon--alarm">
+                <h3 class="wrapper__item-title">photography</h3>
+                <p class="wrapper__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, cumque?</p>
             </div>
             </li>
-            <li class="items">
-            <div class="item-plus icon-ligne">
-                <h3 class="soustitre">web design</h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, amet.</p>
+            <li class="wrapper__item">
+            <div class="wrapper__icon wrapper__icon--ligne">
+                <h3 class="wrapper__item-title">web design</h3>
+                <p class="wrapper__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, amet.</p>
             </div>
             </li>
-            <li class="items">
-            <div class="item-plus icon-comp">
-                <h3 class="soustitre">creativity</h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quam.</p>
+            <li class="wrapper__item">
+            <div class="wrapper__icon wrapper__icon--comp">
+                <h3 class="wrapper__item-title">creativity</h3>
+                <p class="wrapper__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quam.</p>
             </div>
             </li>
-            <li class="items">
-            <div class="item-plus icon-book">
-                <h3 class="soustitre">seo</h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sed.</p>
+            <li class="wrapper__item">
+            <div class="wrapper__icon wrapper__icon--book">
+                <h3 class="wrapper__item-title">seo</h3>
+                <p class="wrapper__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sed.</p>
             </div>
             </li>
-            <li class="items">
-            <div class="item-plus icon-home">
-                <h3 class="soustitre">css/html</h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptate.</p>
+            <li class="wrapper__item">
+            <div class="wrapper__icon wrapper__icon--home">
+                <h3 class="wrapper__item-title">css/html</h3>
+                <p class="wrapper__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptate.</p>
             </div>
             </li>
-            <li class="items">
-            <div class="item-plus icon-digital">
-                <h3 class="soustitre">digital</h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, harum?</p>
+            <li class="wrapper__item">
+            <div class="wrapper__icon wrapper__icon--digital">
+                <h3 class="wrapper__item-title">digital</h3>
+                <p class="wrapper__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, harum?</p>
             </div>
             </li>
         </ul>
         </section>
         <section class="wrapper">
-            <h2 class="title">Who we are <span>meet our team</span></h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, architecto libero ea laborum quas nihil incidunt natus.
+            <h2 class="wrapper__title">Who we are <span>meet our team</span></h2>
+            <p class="wrapper__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, architecto libero ea laborum quas nihil incidunt natus.
                  Repellat cupiditate dolores aspern
                  delectus porro cum, dolor fugiat soluta. Quo, facere. Porro?</p>
-            <ul class="team-items">
-                <li class="list-item">
+            <ul class="list wrapper__list team">
+            <li class="team__list-item">
                 <div class="overlay">
-                    <ul class="icons-list">
-                            <li><a href="#" class="icons facebook"></a></li>
-                            <li><a href="#" class="icons twitter"></a></li>
-                            <li><a href="#" class="icons pinterest"></a></li>
-                            <li><a href="#" class="icons instagram"></a></li>
+                    <ul class="list overlay__list">
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-pinterest"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
                     </ul>
                 </div>
-                <article class="items-i">
-                <img class="img" src="img/Layer 16.png" alt="boy">
-                <h3 class="name">mattew dix</h3>
-                <p class="occupation">Graphic Design</p>
-                </article></li>
-            <li class="list-item">
+                <article class="article">
+                    <img srcset="img/Rectangle14.png 380w, img/Rectangle14@2x.png 760w" 
+                    sizes="380px"
+                    src="img/Rectangle14.png" alt="boy">
+                    <h3 class="wrapper__item-title wrapper__item-title--name">mattew dix</h3>
+                    <p class="article__occupation">Graphic Design</p>
+                </article>
+            </li>
+            <li class="team__list-item">
                 <div class="overlay">
-                    <ul class="icons-list">
-                        <li>
-                            <a href="#" class="icons facebook"></a>
-                            <a href="#" class="icons twitter"></a>
-                            <a href="#" class="icons pinterest"></a>
-                            <a href="#" class="icons instagram"></a>                        
-                        </li>
+                    <ul class="list overlay__list">
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-pinterest"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
                     </ul>
                 </div>
-                <article class="items-i">
-                <img src="img/Layer 19.png" alt="boy">
-                <h3 class="name">christopher campbell</h3>
-                <p class="occupation">Branding/UX design</p>
+                <article class="article">
+                <img srcset="img/Layer19.png 380w, img/Layer19@2x.png 760w" 
+                sizes="380px"
+                src="img/Layer19.png" alt="boy">
+                <h3 class="wrapper__item-title wrapper__item-title--name">christopher campbell</h3>
+                <p class="article__occupation">Branding/UX design</p>
             </article></li>
-            <li class="list-item">
+            <li class="team__list-item">
                 <div class="overlay">
-                    <ul class="icons-list">
-                        <li>
-                            <a href="#" class="icons facebook">
-                                <svg class="hover__icon">
-                                    <use href="img/symbol-defs.svg#facebook" width="50px"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="icons twitter"></a>
-                            <a href="#" class="icons pinterest"></a>
-                            <a href="#" class="icons instagram"></a>                        
-                        </li>
+                    <ul class="list overlay__list">
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-pinterest"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#" class="overlay__icons">
+                            <svg>
+                                <use href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>                     
                     </ul>
                 </div>
-                <article class="items-i">
-                <img src="img/Rectangle 14.jpg" alt="boy">
-                <h3 class="name">michael fertig</h3>
-                <p class="occupation">Developer</p>
+                <article class="article">
+                <img srcset="img/Layer18.png 380w, img/Layer18@2x.png 760w" 
+                sizes="380px"
+                src="img/Layer18.png" alt="boy">
+                <h3 class="wrapper__item-title wrapper__item-title--name">michael fertig</h3>
+                <p class="article__occupation">Developer</p>
             </article></li>
                 </ul>
         </section>
     </main>
     <footer class="footer container">
-        <div class="info">
+        <div class="footer__info">
             <span>© 2016 MoGo free PSD template by </span> 
             <span class="span">Laaqiq</span>
         </div>
-        <form action="#" method="get" class="form-holder">
+        <form action="#" method="get" class="footer__form-holder">
             <label for="email_input"></label>
             <input type="text" name="subscribe" id="email_input" class="input-field" placeholder="Your Email...">
             <input type="submit" value="subscribe" class="input-button">
         </form>
     </footer>
-    
-    <svg class="icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
-   
+       
 </body>
 </html>
