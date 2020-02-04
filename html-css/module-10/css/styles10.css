@@ -46,7 +46,7 @@ html {
 .site-navigation a:hover {
     color: #fce38a;
 }
-.site-navigation:hover svg {
+.site-navigation a:hover svg {
     fill: #fce38a;
 }
 .site-logo {
@@ -336,7 +336,7 @@ html {
     -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
-.overlay__list:hover svg {
+.overlay__list a:hover svg {
     fill: #ffffff;
     
 }
