@@ -71,6 +71,12 @@ html {
     transform: scaleX(0);
     transition: transform 200ms ease-in-out;
 }
+// .site-navigation {
+//     a:hover
+//     &::after {
+//     transform: scaleX(1);
+// }
+// }
 .header__navigation--icon {
     display: inline-block;
     width: 18px;
@@ -81,7 +87,6 @@ html {
     background-position: center;
     margin: 0;
     padding: 0;
-    cursor: pointer;
 }
 .page-nav {
     margin-bottom: 168px;
@@ -98,15 +103,13 @@ html {
     line-height: 1;
     text-transform: uppercase;
     color: #ffffff;
-}
-.header__title--item {
-    display: block;
-    text-align: center;
-    margin: 0 auto; 
-    margin-bottom: 66px;
-    font-family: "Kaushan Script", cursive;
-    font-size: 72px;
-    color: #ffffff;
+    &--item {
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 66px;
+        font-family: "Montserrat";
+        font-size: 72px;
+    }
 }
 .button {
     display: block;
@@ -123,5 +126,19 @@ html {
     &:hover {
         background-color: #fce38a;
     }
+}
+.wrapper__title {
+    text-align: center;
+    margin: 0 auto; 
+    margin-bottom: 80px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    line-height: 50px;
+}
+.wrapper__title span {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
