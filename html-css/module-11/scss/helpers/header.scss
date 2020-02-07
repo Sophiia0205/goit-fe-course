@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.musthead {
+    background-image: url(../img/Layer15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    padding: 18px 0;
+    margin-bottom: 40px;
+}
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-navigation {
+    display: flex;
+    min-width: 620px;
+    justify-content: space-between;
+    a:hover {
+        color: #fce38a;
+        svg {
+            fill: #fce38a;
+        } 
+    } 
+}
+.site-logo {
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    &:hover {
+        color: #fce38a;
+    }
+}
+.site-navigation__link {
+    display: block;
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 500;
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color linear 0.2s;
+    padding-top: 12px;
+}
+.site-navigation__link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color:#fce38a;
+    margin-top: 12px;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+.site-navigation a:hover::after {
+            transform: scaleX(1);
+}
+.header__navigation--icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: none;
+    fill: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.page-nav {
+    margin-bottom: 168px;
+}
+.page-header {
+    margin: 0 auto;
+}
+.header__title {
+    text-align: center;
+    width: 820px;
+    margin: 0 auto 100px; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 150px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+    &--item {
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 66px;
+        font-family: "Kaushan Script", cursive;
+        font-size: 72px;
+    }
+}
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 158px;
+    height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Montserrat";
+    cursor: pointer;
+    &:hover {
+        background-color: #fce38a;
+    }
+}
