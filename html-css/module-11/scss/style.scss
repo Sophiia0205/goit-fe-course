@@ -40,23 +40,23 @@ html {
 }
 .site-logo {
     display: inline-flex;
-    font-family: "Montserrat", sans-serif;
+    font-family: $main-font;
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
     margin: 0;
     padding: 0;
     &:hover {
-        color: #fce38a;
+        color: $yellow;
     }
 }
 .site-navigation__link {
     display: block;
-    font-family: "Montserrat", sans-serif; 
+    font-family: $main-font; 
     font-weight: 500;
     text-decoration: none;
-    color:#ffffff;
+    color:$white;
     font-size: 14px;
     text-transform: uppercase;
     transition: color linear 0.2s;
@@ -66,7 +66,7 @@ html {
     content: "";
     display: block;
     height: 3px;
-    background-color:#fce38a;
+    background-color:$yellow;
     margin-top: 12px;
     transform: scaleX(0);
     transition: transform 200ms ease-in-out;
@@ -79,7 +79,7 @@ html {
     width: 18px;
     height: 18px;
     border: none;
-    fill: #ffffff;
+    fill: $white;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
@@ -95,16 +95,16 @@ html {
     text-align: center;
     width: 820px;
     margin: 0 auto 100px; 
-    font-family: "Montserrat", sans-serif;
+    font-family: $main-font;
     font-size: 150px;
     line-height: 1;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     &--item {
         display: block;
         margin: 0 auto; 
         margin-bottom: 66px;
-        font-family: "Kaushan Script", cursive;
+        font-family: $secondary-font;
         font-size: 72px;
     }
 }
@@ -113,15 +113,15 @@ html {
     margin: 0 auto;
     width: 158px;
     height: 40px;
-    border: 3px solid #ffffff;
+    border: 3px solid $white;
     background-color: transparent;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: $main-font;
     cursor: pointer;
     &:hover {
-        background-color: #fce38a;
+        background-color: $yellow;
     }
 }
 .wrapper__title {
@@ -299,23 +299,23 @@ html {
     font-weight: 200;
 }
 .footer {
-    color: #333333;
+    color: $dark-grey;
     height: 63px;
     font-size: 14px;
     font-family: $main-font;
     font-weight: normal;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid $border-grey;
     margin-top: 85px;
 }
 .span {
-    color: #f38181;
+    color: $pink;
 }
 input::placeholder {
-    font-family: "Roboto";
+    font-family: $third-font;
     font-style: italic;
     font-size: 15px;
     line-height: 24px;
-    color: #999999;
+    color: $dark-grey;
 }  
 .footer__form-holder {
     display: flex;
@@ -337,7 +337,7 @@ input::placeholder {
     width: 230px;
     height: 40px;
     padding: 12px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $border-grey;
     border-right: none;
 }
 
